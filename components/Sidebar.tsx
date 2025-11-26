@@ -10,16 +10,16 @@ const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
   return (
     <section className="sidebar">
-      <nav className="flex flex-col gap-4">
+      <nav className="flex flex-col gap-4 px-4">
         <Link href="/" className="mb-4 flex cursor-pointer items-center gap-2">
           <Image
-            src="/icons/logo.png"
+            src="/icons/lo.png"
             alt="qorvex logo"
             width={34}
             height={34}
             className="size-6 max-xl:size-14"
           />
-          <h1 className="sidebar-logo font-ibm-plex-serif">Qorvex</h1>
+          <h1 className="sidebar-logo">Qorvex</h1>
         </Link>
         {sidebarLinks.map((item) => {
           const isActive =
